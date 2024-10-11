@@ -23,8 +23,8 @@ The server will run on http://localhost:5000.
 
 ### Register User or Admin:
 
-Endpoint: POST /register
-Request Body:
+- Endpoint: POST /register
+- Request Body:
 {
   "Name": " User1",
   "Email": "user1@example.com",
@@ -34,8 +34,8 @@ Request Body:
 
 ### Login User or Admin:
 
-Endpoint: POST /login
-Request Body:
+- Endpoint: POST /login
+- Request Body:
 {
   "Email": "user1@example.com",
   "Password": "password123"
@@ -43,14 +43,14 @@ Request Body:
 
 ### Fetch All Admins:
 
-Endpoint: GET /admins
-Headers: Authorization: Bearer <token> (obtained from Login request)
+- Endpoint: GET /admins
+- Headers: Authorization: Bearer <token> (obtained from Login request)
 
 ### Upload Assignment:
 
-Endpoint: POST /upload
-Headers: Authorization: Bearer <token> (obtained from Login request)
-Request Body:
+- Endpoint: POST /upload
+- Headers: Authorization: Bearer <token> (obtained from Login request)
+- Request Body:
 {
   "AdminId": "admin id"
   "Task": "Task1"
@@ -58,15 +58,15 @@ Request Body:
 
 ### Admin Views Assignments:
 
-Endpoint: GET /assignments
-Headers: Authorization: Bearer <token> (obtained from Login request)
+- Endpoint: GET /assignments
+- Headers: Authorization: Bearer <token> (obtained from Login request)
 
 ### Admin Accepts Assignment:
 
-Endpoint: POST /assignments/:id/accept    (assignment Id, obtained from get assignments request)
-Headers: Authorization: Bearer <token> (obtained from Login request)
+- Endpoint: POST /assignments/:id/accept    (assignment Id, obtained from get assignments request)
+- Headers: Authorization: Bearer <token> (obtained from Login request)
 
 ### Admin Rejects Assignment:
 
-Endpoint: POST /assignments/:id/reject  (assignment Id, obtained from get assignments request)
-Headers: Authorization: Bearer <token> (obtained from Login request)
+- Endpoint: POST /assignments/:id/reject  (assignment Id, obtained from get assignments request)
+- Headers: Authorization: Bearer <token> (obtained from Login request)
